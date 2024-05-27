@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latam LiQuor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h2>Licorería Premium</h2>
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+    </div>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <!-- Aquí agregamos la imagen del logo -->
+                <img src="./assets/img/inicio.jpg" alt="Logo de Licorería Premium" style="width: 100%; height: auto; margin-bottom: 1rem;">
+                <!-- Fin de la imagen del logo -->
+                <ul>
+                    <li class="sidebar_main_title"><a href="#">Licorería Premium</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#novedades">Novedades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <p>Todos los derechos reservados</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div id="inicio" class="section">
+            </div>
+            <div id="catalogo" class="section">
+                <h2>Catálogo Principal</h2>
+                <div class="sort-bar">
+                    <label for="sort">Ordenar por:</label>
+                    <select id="sort">
+                        <option value="price">Precio</option>
+                    </select>
+                </div>
+                <section class="product-list">
+                    <article class="product-item">
+                        <img src="./assets/img/1.JPG" alt="Black Label 12 años">
+                        <h2>Black Label 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/2.JPG" alt="Chivas Regal 12 años">
+                        <h2>Chivas Regal 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/3.JPG" alt="Glenfiddich 12 años">
+                        <h2>Glenfiddich 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/4.PNG" alt="Buchanan's 18 años">
+                        <h2>Buchanan's 18 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/1.JPG" alt="Black Label 12 años">
+                        <h2>Black Label 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/2.JPG" alt="Chivas Regal 12 años">
+                        <h2>Chivas Regal 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/3.JPG" alt="Glenfiddich 12 años">
+                        <h2>Glenfiddich 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/4.PNG" alt="Buchanan's 18 años">
+                        <h2>Buchanan's 18 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                </section>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+            <div id="ofertas" class="section">
+                <h2>Ofertas</h2>
+                <section class="product-list">
+                    <article class="product-item">
+                        <img src="./assets/img/1.JPG" alt="Black Label 12 años">
+                        <h2>Black Label 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/2.JPG" alt="Chivas Regal 12 años">
+                        <h2>Chivas Regal 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                </section>
+            </div>
+            <div id="novedades" class="section">
+                <h2>Novedades</h2>
+                <p>Próximamente</p>
+                <section class="product-list">
+                    <article class="product-item">
+                        <img src="./assets/img/1.JPG" alt="Black Label 12 años">
+                        <h2>Black Label 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/2.JPG" alt="Chivas Regal 12 años">
+                        <h2>Chivas Regal 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/3.JPG" alt="Glenfiddich 12 años">
+                        <h2>Glenfiddich 12 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                    <article class="product-item">
+                        <img src="./assets/img/4.PNG" alt="Buchanan's 18 años">
+                        <h2>Buchanan's 18 años</h2>
+                        <button>Ver más</button>
+                    </article>
+                </section>
+            </div>
+            <div id="contacto" class="section">
+                <h2>Contacto</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Licorería Premium - Todos los derechos reservados</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
